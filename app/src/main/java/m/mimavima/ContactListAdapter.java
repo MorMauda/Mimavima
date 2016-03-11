@@ -52,10 +52,10 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
         }
 
         @Override
-        public void onBindViewHolder(ContactViewHolder fruitViewHolder, int i) {
-            fruitViewHolder.contactName.setText(contacts.get(i).contactName);
+        public void onBindViewHolder(ContactViewHolder contactViewHolder, int i) {
+            contactViewHolder.contactName.setText(contacts.get(i).contactName);
 //        System.out.println(fruits.get(i).num);
-            fruitViewHolder.contactId.setText("" + contacts.get(i).contactId);
+            contactViewHolder.contactId.setText("" + contacts.get(i).contactId);
         }
 
         @Override

@@ -1,6 +1,7 @@
 package m.mimavima;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.login_btn) {
             final String userName = ((EditText) findViewById(R.id.user_name)).getText().toString();
             final String password = ((EditText) findViewById(R.id.user_password)).getText().toString();
+            Intent intent = new Intent(this, ContactListActivity.class);
+            startActivity(intent);
 
 
     }
